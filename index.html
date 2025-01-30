@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Քաղցրավենիքի Խանութ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="brown-theme">
+    <header class="dark-brown-bg animate-fade-in">
+        <nav class="main-nav brown-bg animate-slide-down">
+            
+            <ul class="menu">
+                <div class="logorown-text">🍰 Sweet Shop</div>
+                <li><a href="#" class="active brown-text animate-hover">Գլխավոր</a></li>
+                <li><a href="#" data-category="chocolate" class="brown-text animate-hover">Շոկոլադներ</a></li>
+                <li><a href="#" data-category="cake" class="brown-text animate-hover">Տորթեր</a></li>
+                <li><a href="#" data-category="candy" class="brown-text animate-hover">Կոնֆետներ</a></li>
+                <li><a href="#" data-category="ice-cream" class="brown-text animate-hover">Պաղպաղակներ</a></li>
+                <div class="cart-info"></div>
+                <button id="cart-button" class="brown-button animate-pulse">
+                    🛒 Զամբյուղ (<span id="cart-count">0</span>)
+                </button>
+                <div id="cart-total" class="brown-text animate-fade-in">Ընդհանուր: 0 դրամ</div>
+            </div>
+            </ul>
+            
+        </nav>
+        <div class="header-content animate-slide-up">
+            <h1 class="black-text">Քաղցրավենիքի Խանութ</h1>
+            <p class="brown-text">Լավագույն քաղցրավենիքները մեր խանութում</p>
+        </div>
+    </header>
+
+    <main class="products-container brown-bg animate-fade-in" id="products">
+        <!-- Product cards will be added here dynamically with these classes -->
+        <!-- Each product card should have: -->
+        <div class="product-card animate-fade-in animate-hover-scale">
+            <img class="product-image animate-zoom-on-hover" src="..." alt="...">
+            <!-- ... rest of product card content ... -->
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content brown-bg animate-scale">
+            <span class="close brown-text animate-rotate">&times;</span>
+            <h2 class="black-text">Զամբյուղ</h2>
+            <div id="cart-items"></div>
+            <div id="cart-modal-total" class="brown-text">Ընդհանուր: 0 դրամ</div>
+            <button id="checkout" class="brown-button animate-pulse">Պատվիրել</button>
+        </div>
+    </div>
+
+    <footer class="dark-brown-bg animate-fade-in">
+        <p class="brown-text animate-hover">Հեռ․՝ +37493042310</p>
+        <p class="brown-text animate-hover">Հասցե՝ Գյումրի, Կենտրոն</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
